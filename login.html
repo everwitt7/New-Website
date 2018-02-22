@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dialog. login</title>
+</head>
+<body>
+	<div class="formstuff">
+		<h1>login to dialog. with your account</h1>
+
+		<form method="POST" action="validate.php">
+			<label id="user">Username:</label>
+			<input type="text" name="user" required>
+			<br>
+			<label id="pass">Password:</label>
+			<input type="password" name="pass" required>
+			<br>
+			<input type="submit" value="login" />
+		</form>
+		<br>
+
+		<form action="guest.php" method="post">
+			<input type="submit" value="Continue As Guest" />
+		</form>
+
+		<br>
+
+		<form action="createaccount.html">
+			<label id="register">Register</label>
+			<input type="submit" name="register"  value="Create Account"/>
+		</form>
+		<form action="forgotusername.html">
+			<label id="forgotuser">Recover Username</label>
+			<input type="submit" name="forgotuser"  value="Recover Username"/>
+		</form>
+
+		<form action="forgotpassword.html">
+			<label id="forgotpass">Recover Password</label>
+			<input type="submit" name="forgotpass"  value="Recover Password"/>
+		</form>
+	</div>
+</body>
+</html>

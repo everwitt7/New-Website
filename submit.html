@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>News Submission</title>
+</head>
+<body>
+
+    <form method="GET" action="submit.php">
+
+        <h1>Submit Your Story Here:</h1>
+
+        <div>
+
+            <label for="usertitle">Please Choose a Title for your Story</label>
+            <input type="text" name="usertitle" id="usertitle" required>
+
+            <br>
+
+            <input type="radio" id="unlinked" name="linkchoice" value="Title Unlinked" checked="checked">
+            <label for="unlinked">Story Unlinked</label>
+
+            <br>
+
+            <input type="radio" id="linked" name="linkchoice" value="Title Linked">
+            <label for="linked">Story Linked</label>
+
+            <br>
+
+            <label for="linkurl">URL for Linked Story</label>
+            <input type="text" name="linkurl" id="linkurl">
+
+            <br>
+
+            <p>Please Write Your Story</p>
+            <textarea id="userstory" name="userstory" rows="20" cols="60" required></textarea>
+
+            <br>
+
+        </div>
+
+        <div>
+            <button type="submit">Submit Story</button>
+        </div>
+    </form>
+    <form class="" action="backtostories.php" method="post">
+        <button type="submit">Back To Stories</button>
+    </form>
+
+</body>
+</html>
